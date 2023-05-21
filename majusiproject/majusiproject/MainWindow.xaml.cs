@@ -1,37 +1,49 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Security.Cryptography;
-
-using System;
-using System.Collections.Generic;
-using System.Security.Cryptography;
-using System.Text;
-using System.Windows;
+using System.Windows.Threading;
+using System.IO;
 
 namespace majusiproject
 {
     public partial class MainWindow : Window
     {
         private Dictionary<string, string> users = new Dictionary<string, string>(); // Felhasználók tárolása (felhasználónév és titkosított jelszó hash)
+        private string[] imageNames = { "hir1.png", "hir2.png", "hir3.png" };
+        private int currentIndex = 0;
+        private DispatcherTimer timer;
+        private string userDataFilePath = "userdata.txt";
 
         public MainWindow()
         {
             InitializeComponent();
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(3);
+            timer.Tick += Timer_Tick;
+            timer.Start();
 
-            // Itt adhatsz hozzá alapértelmezett felhasználókat a regisztrációhoz (opcionális)
-            users.Add("admin", "4F3BF6ECA1270E9D"); // Példa alapértelmezett felhasználó
+            LoadUserData();
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            ShowNextImage();
+        }
+
+        private void ShowNextImage()
+        {
+            string imageName = imageNames[currentIndex];
+            string imagePath = $"Assets/{imageName}";
+            BitmapImage bitmap = new BitmapImage(new Uri(imagePath, UriKind.Relative));
+            newsImage.Source = bitmap;
+
+            currentIndex = (currentIndex + 1) % imageNames.Length;
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
@@ -69,6 +81,7 @@ namespace majusiproject
                 if (!users.ContainsKey(inputUsername))
                 {
                     users.Add(inputUsername, CalculateMD5Hash(inputPassword));
+                    SaveUserData();
                     MessageBox.Show("Sikeres regisztráció!");
                 }
                 else
@@ -96,6 +109,52 @@ namespace majusiproject
                 }
 
                 return sb.ToString();
+            }
+        }
+
+        private void LoadUserData()
+        {
+            try
+            {
+                if (File.Exists(userDataFilePath))
+                {
+                    using (StreamReader reader = new StreamReader(userDataFilePath))
+                    {
+                        string line;
+                        while ((line = reader.ReadLine()) != null)
+                        {
+                            string[] parts = line.Split(':');
+                            if (parts.Length == 2)
+                            {
+                                string username = parts[0];
+                                string passwordHash = parts[1];
+                                users.Add(username, passwordHash);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hiba történt az adatok betöltése közben: " + ex.Message);
+            }
+        }
+
+        private void SaveUserData()
+        {
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(userDataFilePath))
+                {
+                    foreach (var user in users)
+                    {
+                        writer.WriteLine($"{user.Key}:{user.Value}");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hiba történt az adatok mentése közben: " + ex.Message);
             }
         }
     }

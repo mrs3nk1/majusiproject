@@ -23,8 +23,10 @@ namespace majusiproject
 
         private void LogoutButton_Click(object sender, RoutedEventArgs e)
         {
-            // Az aktuális ablak bezárása
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
             Close();
         }
+
     }
 }
