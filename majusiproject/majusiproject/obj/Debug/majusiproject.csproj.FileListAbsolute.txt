@@ -1,0 +1,16 @@
+D:\majusiproject\majusiproject\majusiproject\bin\Debug\majusiproject.exe.config
+D:\majusiproject\majusiproject\majusiproject\bin\Debug\majusiproject.exe
+D:\majusiproject\majusiproject\majusiproject\bin\Debug\majusiproject.pdb
+D:\majusiproject\majusiproject\majusiproject\obj\Debug\MainWindow.baml
+D:\majusiproject\majusiproject\majusiproject\obj\Debug\NewWindow.baml
+D:\majusiproject\majusiproject\majusiproject\obj\Debug\MainWindow.g.cs
+D:\majusiproject\majusiproject\majusiproject\obj\Debug\NewWindow.g.cs
+D:\majusiproject\majusiproject\majusiproject\obj\Debug\App.g.cs
+D:\majusiproject\majusiproject\majusiproject\obj\Debug\majusiproject_MarkupCompile.cache
+D:\majusiproject\majusiproject\majusiproject\obj\Debug\majusiproject.g.resources
+D:\majusiproject\majusiproject\majusiproject\obj\Debug\majusiproject.Properties.Resources.resources
+D:\majusiproject\majusiproject\majusiproject\obj\Debug\majusiproject.csproj.GenerateResource.cache
+D:\majusiproject\majusiproject\majusiproject\obj\Debug\majusiproject.csproj.CoreCompileInputs.cache
+D:\majusiproject\majusiproject\majusiproject\obj\Debug\majusiproject.exe
+D:\majusiproject\majusiproject\majusiproject\obj\Debug\majusiproject.pdb
+D:\majusiproject\majusiproject\majusiproject\obj\Debug\majusiproject.csproj.AssemblyReference.cache

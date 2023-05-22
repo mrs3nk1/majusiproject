@@ -74,14 +74,28 @@ namespace majusiproject
         {
             string inputUsername = usernameTextBox.Text;
             string inputPassword = passwordBox.Password;
+            string inputEmail = emailTextBox.Text;
+            string confirmPassword = confirmPasswordBox.Password;
 
-            if (!string.IsNullOrEmpty(inputUsername) && !string.IsNullOrEmpty(inputPassword))
+            if (!string.IsNullOrEmpty(inputUsername) && !string.IsNullOrEmpty(inputPassword) && !string.IsNullOrEmpty(inputEmail) && !string.IsNullOrEmpty(confirmPassword))
             {
+                if (!inputEmail.Contains("@"))
+                {
+                    MessageBox.Show("Hibás e-mail formátum!");
+                    return;
+                }
+
+                if (inputPassword != confirmPassword)
+                {
+                    MessageBox.Show("A jelszavak nem egyeznek meg!");
+                    return;
+                }
+
                 // Felhasználó regisztráció
                 if (!users.ContainsKey(inputUsername))
                 {
                     users.Add(inputUsername, CalculateMD5Hash(inputPassword));
-                    SaveUserData();
+                    SaveUserData(inputUsername, inputPassword, inputEmail);
                     MessageBox.Show("Sikeres regisztráció!");
                 }
                 else
@@ -124,10 +138,11 @@ namespace majusiproject
                         while ((line = reader.ReadLine()) != null)
                         {
                             string[] parts = line.Split(':');
-                            if (parts.Length == 2)
+                            if (parts.Length == 3)
                             {
                                 string username = parts[0];
                                 string passwordHash = parts[1];
+                                string email = parts[2];
                                 users.Add(username, passwordHash);
                             }
                         }
@@ -140,16 +155,14 @@ namespace majusiproject
             }
         }
 
-        private void SaveUserData()
+        private void SaveUserData(string username, string password, string email)
         {
             try
             {
-                using (StreamWriter writer = new StreamWriter(userDataFilePath))
+                using (StreamWriter writer = new StreamWriter(userDataFilePath, true))
                 {
-                    foreach (var user in users)
-                    {
-                        writer.WriteLine($"{user.Key}:{user.Value}");
-                    }
+                    string hashedPassword = CalculateMD5Hash(password);
+                    writer.WriteLine($"{username}:{hashedPassword}:{email}");
                 }
             }
             catch (Exception ex)
