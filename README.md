@@ -11,5 +11,8 @@ v2 verzió tartalma: v1 + jelszó/usernevek mentése, "friss hírek" bejelentkez
 v3 verzió felkerült githubra
 v3 verzió tartalma: v2 + bekerült a jelszó "megereősítése", illetve az email, mint regisztrációs feltétel. Ugyanúgy mentve vannak mint a jelszó/username, teszt felhasználó hozzáadva: username: teszt , password: teszt , e-mail: teszt@teszt 
 
+# V4 
+v4 verzió felkerült githubra
+v4 verzió tartalma: v3 + főoldal UI fejlesztések
 
 
