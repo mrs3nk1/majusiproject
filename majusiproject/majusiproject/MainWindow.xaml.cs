@@ -15,7 +15,7 @@ namespace majusiproject
     public partial class MainWindow : Window
     {
         private Dictionary<string, string> users = new Dictionary<string, string>(); // Felhasználók tárolása (felhasználónév és titkosított jelszó hash)
-        private string[] imageNames = { "hir1.png", "hir2.png", "hir3.png" };
+        private string[] imageNames = { "film1.jpg", "film2.jpg", "film3.jpg", "film4.jpg", "film5.jpg" };
         private int currentIndex = 0;
         private DispatcherTimer timer;
         private string userDataFilePath = "userdata.txt";
@@ -42,7 +42,6 @@ namespace majusiproject
             string imagePath = $"Assets/{imageName}";
             BitmapImage bitmap = new BitmapImage(new Uri(imagePath, UriKind.Relative));
             newsImage.Source = bitmap;
-
             currentIndex = (currentIndex + 1) % imageNames.Length;
         }
 
@@ -169,6 +168,11 @@ namespace majusiproject
             {
                 MessageBox.Show("Hiba történt az adatok mentése közben: " + ex.Message);
             }
+        }
+
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }

@@ -112,5 +112,18 @@
   <ItemGroup>
     <Resource Include="icon.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Nevtelen-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\film1.jpg" />
+    <Resource Include="Assets\film2.jpg" />
+    <Resource Include="Assets\film3.jpg" />
+    <Resource Include="Assets\film4.jpg" />
+    <Resource Include="Assets\film5.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
