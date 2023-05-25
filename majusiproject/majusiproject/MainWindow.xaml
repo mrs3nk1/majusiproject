@@ -34,7 +34,7 @@
 
 
             <StackPanel Grid.Column="1" Width="960" Background="Black" >
-                <TextBlock Foreground="#F5D21F" Text="Műsoron" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="403,10" FontSize="36" FontFamily="Unispace"/>
+                <TextBlock Foreground="#F5D21F" Text="Műsoron" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="403,30" FontSize="36" FontFamily="Unispace"/>
                 <Image x:Name="newsImage" Height="800" Width="800"/>
             </StackPanel>
         </Grid>

@@ -14,3 +14,6 @@ D:\majusiproject\majusiproject\majusiproject\obj\Debug\majusiproject.csproj.Core
 D:\majusiproject\majusiproject\majusiproject\obj\Debug\majusiproject.exe
 D:\majusiproject\majusiproject\majusiproject\obj\Debug\majusiproject.pdb
 D:\majusiproject\majusiproject\majusiproject\obj\Debug\majusiproject.csproj.AssemblyReference.cache
+D:\majusiproject\majusiproject\majusiproject\obj\Debug\KisteremJegyfoglalasWindow.g.cs
+D:\majusiproject\majusiproject\majusiproject\obj\Debug\majusiproject_MarkupCompile.lref
+D:\majusiproject\majusiproject\majusiproject\obj\Debug\KisteremJegyfoglalasWindow.baml

@@ -28,5 +28,18 @@ namespace majusiproject
             Close();
         }
 
+        private void KisteremJegyfoglalas_Click(object sender, RoutedEventArgs e)
+        {
+            // Új ablak megjelenítése a kisterem jegyfoglaláshoz
+            KisteremJegyfoglalasWindow kisteremWindow = new KisteremJegyfoglalasWindow();
+            kisteremWindow.Show();
+        }
+
+        private void FoteremJegyfoglalas_Click(object sender, RoutedEventArgs e)
+        {
+            // Üzenet megjelenítése a főterem jegyfoglalás alatt
+            MessageBox.Show("A főterem felújítás alatt", "Jegyfoglalás", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
     }
+    
 }
