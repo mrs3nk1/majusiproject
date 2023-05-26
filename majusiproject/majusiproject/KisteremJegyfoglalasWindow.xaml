@@ -8,6 +8,88 @@
         Title="Jegyfoglalás" Height="540" Width="960">
     <Border BorderBrush="#F5D21F" BorderThickness="5" >
         <Grid Background="Black">
+            <StackPanel Margin="50" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid Margin="50">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Margin="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button x:Name="ff" Background="Transparent" Content="1" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Margin="0 0 5 0" Grid.Column="0" Height="50" Width="50"/>
+                        <Button x:Name="ftw" Background="Transparent" Content="2" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Margin="0 0 5 0" Grid.Column="1" Height="50" Width="50"/>
+                        <Button x:Name="fth" Background="Transparent" Content="3" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Margin="0 0 5 0" Grid.Column="2" Height="50" Width="50"/>
+                        <Button x:Name="ffr" Background="Transparent" Content="4" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Margin="0 0 5 0" Grid.Column="3" Height="50" Width="50"/>
+                        <Button x:Name="ffv" Background="Transparent" Content="5" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Grid.Column="4" Height="50" Width="50"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Margin="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button x:Name="twf" Background="Transparent" Content="1" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Margin="0 0 5 0" Grid.Column="0" Height="50" Width="50"/>
+                        <Button x:Name="twtw" Background="Transparent" Content="2" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Margin="0 0 5 0" Grid.Column="1" Height="50" Width="50"/>
+                        <Button x:Name="twth" Background="Transparent" Content="3" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Margin="0 0 5 0" Grid.Column="2" Height="50" Width="50"/>
+                        <Button x:Name="twfr" Background="Transparent" Content="4" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Margin="0 0 5 0" Grid.Column="3" Height="50" Width="50"/>
+                        <Button x:Name="twfv" Background="Transparent" Content="5" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Grid.Column="4" Height="50" Width="50"/>
+                    </Grid>
+                    <Grid Grid.Row="2" Margin="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button x:Name="thf" Background="Transparent" Content="1" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Margin="0 0 5 0" Grid.Column="0" Height="50" Width="50"/>
+                        <Button x:Name="thtw" Background="Transparent" Content="2" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Margin="0 0 5 0" Grid.Column="1" Height="50" Width="50"/>
+                        <Button x:Name="thth" Background="Transparent" Content="3" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Margin="0 0 5 0" Grid.Column="2" Height="50" Width="50"/>
+                        <Button x:Name="thfr" Background="Transparent" Content="4" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Margin="0 0 5 0" Grid.Column="3" Height="50" Width="50"/>
+                        <Button x:Name="thfv" Background="Transparent" Content="5" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Grid.Column="4" Height="50" Width="50"/>
+                    </Grid>
+                    <Grid Grid.Row="3" Margin="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button x:Name="frf" Background="Transparent" Content="1" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Margin="0 0 5 0" Grid.Column="0" Height="50" Width="50"/>
+                        <Button x:Name="frtw" Background="Transparent" Content="2" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Margin="0 0 5 0" Grid.Column="1" Height="50" Width="50"/>
+                        <Button x:Name="frth" Background="Transparent" Content="3" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Margin="0 0 5 0" Grid.Column="2" Height="50" Width="50"/>
+                        <Button x:Name="frfr" Background="Transparent" Content="4" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Margin="0 0 5 0" Grid.Column="3" Height="50" Width="50"/>
+                        <Button x:Name="frfv" Background="Transparent" Content="5" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Grid.Column="4" Height="50" Width="50"/>
+                    </Grid>
+                    <Grid Grid.Row="4" Margin="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button x:Name="fvf" Background="Transparent" Content="1" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Margin="0 0 5 0" Grid.Column="0" Height="50" Width="50"/>
+                        <Button x:Name="fvtw" Background="Transparent" Content="2" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Margin="0 0 5 0" Grid.Column="1" Height="50" Width="50"/>
+                        <Button x:Name="fvth" Background="Transparent" Content="3" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Margin="0 0 5 0" Grid.Column="2" Height="50" Width="50"/>
+                        <Button x:Name="fvfr" Background="Transparent" Content="4" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Margin="0 0 5 0" Grid.Column="3" Height="50" Width="50"/>
+                        <Button x:Name="fvfv" Background="Transparent" Content="5" Foreground="#f5d21f" BorderBrush="#f5d21f" FontSize="20" BorderThickness="3" Grid.Column="4" Height="50" Width="50"/>
+                    </Grid>
+                    
+                </Grid>
+            </StackPanel>
 
         </Grid>
     </Border>
