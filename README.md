@@ -15,4 +15,8 @@ v3 verzió tartalma: v2 + bekerült a jelszó "megereősítése", illetve az ema
 v4 verzió felkerült githubra
 v4 verzió tartalma: v3 + főoldal UI fejlesztések
 
+# V5 
+v5 verzió felkerült githubra
+v5 verzió tartalma: v4 + további UI fejlesztések
+
 
