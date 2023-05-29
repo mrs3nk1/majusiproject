@@ -19,7 +19,7 @@ namespace majusiproject
     /// </summary>
     public partial class KisteremJegyfoglalasWindow : Window
     {
-        List<string> lefoglalthelyek = new List<string>(); 
+        
         string[,] balhelyek = new string[5,5]
         {
                 { "1", "2", "3", "4", "5"},{ "1", "2", "3", "4", "5"},{ "1", "2", "3", "4", "5"},{ "1", "2", "3", "4", "5"},{ "1", "2", "3", "4", "5"}
@@ -36,8 +36,8 @@ namespace majusiproject
 
         private void lff_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[1,1]="lff";
-            lefoglalthelyek.Add("lff");
+            balhelyek[0,0]="lff";
+            
             if (lff.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!","Hiba!");
@@ -51,7 +51,7 @@ namespace majusiproject
 
         private void lftw_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[1, 2] = int.Parse("x");
+            balhelyek[0, 1] = "lftw";
             if (lftw.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -66,7 +66,7 @@ namespace majusiproject
 
         private void lfth_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[1, 3] = int.Parse("x");
+            balhelyek[0, 2] = "lfth";
             if (lfth.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -81,7 +81,7 @@ namespace majusiproject
 
         private void lffr_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[1, 4] = int.Parse("x");
+            balhelyek[0, 3] = "lffr";
             if (lffr.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -96,7 +96,7 @@ namespace majusiproject
 
         private void lffv_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[1, 5] = int.Parse("x");
+            balhelyek[0, 4] = "lffv";
             if (lffv.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -110,7 +110,7 @@ namespace majusiproject
 
         private void ltwf_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[2, 1] = int.Parse("x");
+            balhelyek[1, 0] = "ltwf";
             if (ltwf.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -125,7 +125,7 @@ namespace majusiproject
 
         private void ltwtw_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[2, 2] = int.Parse("x");
+            balhelyek[1,1] = "ltwtw";
             if (ltwtw.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -140,7 +140,7 @@ namespace majusiproject
 
         private void ltwth_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[2, 3] = int.Parse("x");
+            balhelyek[1, 2] = "ltwth";
             if (ltwth.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -155,7 +155,7 @@ namespace majusiproject
 
         private void ltwfr_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[2, 4] = int.Parse("x");
+            balhelyek[1, 3] = "ltwfr";
             if (ltwfr.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -170,7 +170,7 @@ namespace majusiproject
 
         private void ltwfv_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[2, 5] = int.Parse("x");
+            balhelyek[1, 4] = "ltwfv";
             if (ltwfv.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -185,7 +185,7 @@ namespace majusiproject
 
         private void lthf_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[3, 1] = int.Parse("x");
+            balhelyek[2, 0] = "lthf";
             if (lthf.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -200,7 +200,7 @@ namespace majusiproject
 
         private void lthtw_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[3, 2] = int.Parse("x");
+            balhelyek[2, 1] = "lthtw";
             if (lthtw.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -215,7 +215,7 @@ namespace majusiproject
 
         private void lthth_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[3, 3] = int.Parse("x");
+            balhelyek[2, 2] = "lthth";
             if (lthth.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -230,7 +230,7 @@ namespace majusiproject
 
         private void lthfr_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[3, 4] = int.Parse("x");
+            balhelyek[2, 3] = "lthfr";
             if (lthfr.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -245,7 +245,7 @@ namespace majusiproject
 
         private void lthfv_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[3, 5] = int.Parse("x");
+            balhelyek[2, 4] = "lthfv";
             if (lthfv.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -260,7 +260,7 @@ namespace majusiproject
 
         private void lfrf_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[4, 1] = int.Parse("x");
+            balhelyek[3, 0] = "lfrf";
             if (lfrf.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -275,7 +275,7 @@ namespace majusiproject
 
         private void lfrtw_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[4, 2] = int.Parse("x");
+            balhelyek[3, 1] = "lfrtw";
             if (lfrtw.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -290,7 +290,7 @@ namespace majusiproject
 
         private void lfrth_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[4, 3] = int.Parse("x");
+            balhelyek[3, 2] = "lfrth";
             if (lfrth.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -305,7 +305,7 @@ namespace majusiproject
 
         private void lfrfr_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[4, 4] = int.Parse("x");
+            balhelyek[3, 3] = "lfrfr";
             if (lfrfr.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -320,7 +320,7 @@ namespace majusiproject
 
         private void lfrfv_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[4, 5] = int.Parse("x");
+            balhelyek[3, 4] = "lfrfv";
             if (lfrfv.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -335,7 +335,7 @@ namespace majusiproject
 
         private void lfvf_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[5, 1] = int.Parse("x");
+            balhelyek[4, 0] = "lfvf";
             if (lfvf.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -350,7 +350,7 @@ namespace majusiproject
 
         private void lfvtw_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[5, 2] = int.Parse("x");
+            balhelyek[4, 1] = "lfvtw";
             if (lfvtw.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -365,7 +365,7 @@ namespace majusiproject
 
         private void lfvth_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[5, 3] = int.Parse("x");
+            balhelyek[4, 2] = "lfvth";
             if (lfvth.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -380,7 +380,7 @@ namespace majusiproject
 
         private void lfvfr_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[5, 4] = int.Parse("x");
+            balhelyek[4, 3] = "lfvfr";
             if (lfvfr.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -395,7 +395,7 @@ namespace majusiproject
 
         private void lfvfv_Click(object sender, RoutedEventArgs e)
         {
-            balhelyek[5, 5] = int.Parse("x");
+            balhelyek[4, 4] = "lfvfv";
             if (lfvfv.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -410,7 +410,7 @@ namespace majusiproject
 
         private void rff_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[1, 5] = int.Parse("x");
+            jobbhelyek[0, 4] = "rff";
             if (rff.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -425,7 +425,7 @@ namespace majusiproject
 
         private void rftw_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[1, 4] = int.Parse("x");
+            jobbhelyek[0, 3] = "rftw";
             if (rftw.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -440,7 +440,7 @@ namespace majusiproject
 
         private void rfth_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[1, 3] = int.Parse("x");
+            jobbhelyek[0, 2] = "rfth";
             if (rfth.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -455,7 +455,7 @@ namespace majusiproject
 
         private void rffr_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[1, 2] = int.Parse("x");
+            jobbhelyek[0, 1] = "rffr";
             if (rffr.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -470,7 +470,7 @@ namespace majusiproject
 
         private void rffv_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[1, 1] = int.Parse("x");
+            jobbhelyek[0, 0] = "rffv";
             if (rffv.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -485,7 +485,7 @@ namespace majusiproject
 
         private void rtwf_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[2, 5] = int.Parse("x");
+            jobbhelyek[1, 4] = "rtwf";
             if (rtwf.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -500,7 +500,7 @@ namespace majusiproject
 
         private void rtwtw_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[2, 4] = int.Parse("x");
+            jobbhelyek[1, 3] = "rtwtw";
             if (rtwtw.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -514,7 +514,7 @@ namespace majusiproject
 
         private void rtwth_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[2, 3] = int.Parse("x");
+            jobbhelyek[1, 2] = "rtwth";
             if (rtwth.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -529,7 +529,7 @@ namespace majusiproject
 
         private void rtwfr_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[2, 2] = int.Parse("x");
+            jobbhelyek[1, 1] = "rtwfr";
             if (rtwfr.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -544,7 +544,7 @@ namespace majusiproject
 
         private void rtwfv_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[2, 1] = int.Parse("x");
+            jobbhelyek[1, 0] = "rtwfv";
             if (rtwfv.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -559,7 +559,7 @@ namespace majusiproject
 
         private void rthf_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[3, 5] = int.Parse("x");
+            jobbhelyek[2, 4] = "rthf";
             if (rthf.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -574,7 +574,7 @@ namespace majusiproject
 
         private void rthtw_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[3, 4] = int.Parse("x");
+            jobbhelyek[2, 3] = "rthtw";
             if (rthtw.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -589,7 +589,7 @@ namespace majusiproject
 
         private void rthth_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[3, 3] = int.Parse("x");
+            jobbhelyek[2, 2] = "rthth";
             if (rthth.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -604,7 +604,7 @@ namespace majusiproject
 
         private void rthfr_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[3, 2] = int.Parse("x");
+            jobbhelyek[2, 1] = "rthfr";
             if (rthfr.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -619,7 +619,7 @@ namespace majusiproject
 
         private void rthfv_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[3, 1] = int.Parse("x");
+            jobbhelyek[2, 0] = "rthfv";
             if (rthfv.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -634,7 +634,7 @@ namespace majusiproject
 
         private void rfrf_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[4, 5] = int.Parse("x");
+            jobbhelyek[3, 4] = "rfrf";
             if (rfrf.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -649,7 +649,7 @@ namespace majusiproject
 
         private void rfrtw_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[4, 4] = int.Parse("x");
+            jobbhelyek[3,3] = "rfrtw";
             if (rfrtw.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -664,7 +664,7 @@ namespace majusiproject
 
         private void rfrth_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[4, 3] = int.Parse("x");
+            jobbhelyek[3, 2] = "rfrth";
             if (rfrth.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -678,7 +678,7 @@ namespace majusiproject
 
         private void rfrfr_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[4, 2] = int.Parse("x");
+            jobbhelyek[3, 1] = "rfrfr";
             if (rfrfr.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -693,7 +693,7 @@ namespace majusiproject
 
         private void rfrfv_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[4, 1] = int.Parse("x");
+            jobbhelyek[3, 0] = "rfrfv";
             if (rfrfv.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -708,7 +708,7 @@ namespace majusiproject
 
         private void rfvf_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[5, 5] = int.Parse("x");
+            jobbhelyek[4, 4] = "rfvf";
             if (rfvf.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -723,7 +723,7 @@ namespace majusiproject
 
         private void rfvtw_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[5, 4] = int.Parse("x");
+            jobbhelyek[4, 3] = "rfvtw";
             if (rfvtw.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -738,7 +738,7 @@ namespace majusiproject
 
         private void rfvth_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[5, 3] = int.Parse("x");
+            jobbhelyek[4, 2] = "rfvth";
             if (rfvth.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -753,7 +753,7 @@ namespace majusiproject
 
         private void rfvfr_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[5, 2] = int.Parse("x");
+            jobbhelyek[4, 1] = "rfvfr";
             if (rfvfr.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -768,7 +768,7 @@ namespace majusiproject
 
         private void rfvfv_Click(object sender, RoutedEventArgs e)
         {
-            jobbhelyek[5, 1] = int.Parse("x");
+            jobbhelyek[4, 0] = "rfvfv";
             if (rfvfv.Background == Brushes.Red)
             {
                 MessageBox.Show("Ez a hely már levan foglalva!", "Hiba!");
@@ -782,14 +782,211 @@ namespace majusiproject
         }
         private void lbutton_Click(object sender, RoutedEventArgs e)
         {
-            for (int x = 0; x < 4; x++)
+            for (int x = 0; x < 5; x++)
             {
-                for (int y = 0; y < 4; y++)
+                for (int y = 0; y < 5; y++)
                 {
-                    if (balhelyek[x, y] == lefoglalthelyek.Contains)()
+                    if (balhelyek[x, y]=="lff")
                     {
-                        balhelyek[x, y] = 9;
+                        lff.Background = Brushes.Red;
+                        
                     }
+                    else if (balhelyek[x, y] == "lftw")
+                    {
+                        lftw.Background = Brushes.Red;
+                    }
+                    else if (balhelyek[x, y] == "lfth")
+                    {
+                        lfth.Background = Brushes.Red;
+                    }
+                    else if (balhelyek[x, y] == "lffr")
+                    {
+                        lffr.Background = Brushes.Red;
+                    }
+                    else if (balhelyek[x, y] == "lffv")
+                    {
+                        lffv.Background = Brushes.Red;
+                    }
+                    else if (balhelyek[x, y] == "ltwf")
+                    {
+                        ltwf.Background = Brushes.Red;
+                    }
+                    else if (balhelyek[x, y] == "ltwtw")
+                    {
+                        ltwtw.Background = Brushes.Red;
+                    }
+                    else if (balhelyek[x, y] == "ltwth")
+                    {
+                        ltwth.Background = Brushes.Red;
+                    }
+                    else if (balhelyek[x, y] == "ltwfr")
+                    {
+                        ltwfr.Background = Brushes.Red;
+                    }
+                    else if (balhelyek[x, y] == "ltwfv")
+                    {
+                        ltwfv.Background = Brushes.Red;
+                    }
+                    else if (balhelyek[x, y] == "lthf")
+                    {
+                        lthf.Background = Brushes.Red;
+                    }
+                    else if (balhelyek[x, y] == "lthtw")
+                    {
+                        lthtw.Background = Brushes.Red;
+                    }
+                    else if (balhelyek[x, y] == "lthth")
+                    {
+                        lthth.Background = Brushes.Red;
+                    }
+                    else if (balhelyek[x, y] == "lthfr")
+                    {
+                        lthfr.Background = Brushes.Red;
+                    }
+                    else if (balhelyek[x, y] == "lthfv")
+                    {
+                        lthfv.Background = Brushes.Red;
+                    }
+                    else if (balhelyek[x, y] == "lfrf")
+                    {
+                        lfrf.Background = Brushes.Red;
+                    }
+                    else if (balhelyek[x, y] == "lfrtw")
+                    {
+                        lfrtw.Background = Brushes.Red;
+                    }
+                    else if (balhelyek[x, y] == "lfrth")
+                    {
+                        lfrth.Background = Brushes.Red;
+                    }
+                    else if (balhelyek[x, y] == "lfrfr")
+                    {
+                        lfrfr.Background = Brushes.Red;
+                    }
+                    else if (balhelyek[x, y] == "lfrfv")
+                    {
+                        lfrfv.Background = Brushes.Red;
+                    }
+                    else if (balhelyek[x, y] == "lfvf")
+                    {
+                        lfvf.Background = Brushes.Red;
+                    }
+                    else if (balhelyek[x, y] == "lfvtw")
+                    {
+                        lfvtw.Background = Brushes.Red;
+                    }
+                    else if (balhelyek[x, y] == "lfvth")
+                    {
+                        lfvth.Background = Brushes.Red;
+                    }
+                    else if (balhelyek[x, y] == "lfvfr")
+                    {
+                        lfvfr.Background = Brushes.Red;
+                    }
+                    else if (balhelyek[x, y] == "lfvfv")
+                    {
+                        lfvfv.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rff")
+                    {
+                        rff.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rftw")
+                    {
+                        rftw.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rfth")
+                    {
+                        rfth.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rffr")
+                    {
+                        rffr.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rffv")
+                    {
+                        rffv.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rtwf")
+                    {
+                        rtwf.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rtwtw")
+                    {
+                        rtwtw.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rtwth")
+                    {
+                        rtwth.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rtwfr")
+                    {
+                        rtwfr.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rtwfv")
+                    {
+                        rtwfv.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rthf")
+                    {
+                        rthf.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rthtw")
+                    {
+                        rthtw.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rthth")
+                    {
+                        rthth.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rthfr")
+                    {
+                        rthfr.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rthfv")
+                    {
+                        rthfv.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rfrf")
+                    {
+                        rfrf.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rfrtw")
+                    {
+                        rfrtw.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rfrth")
+                    {
+                        rfrth.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rfrfr")
+                    {
+                        rfrfr.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rfrfv")
+                    {
+                        rfrfv.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rfvf")
+                    {
+                        rfvf.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rfvtw")
+                    {
+                        rfvtw.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rfvth")
+                    {
+                        rfvth.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rfvfr")
+                    {
+                        rfvfr.Background = Brushes.Red;
+                    }
+                    else if (jobbhelyek[x, y] == "rfvfv")
+                    {
+                        rfvfv.Background = Brushes.Red;
+                    }  
                 }
             }
         }
