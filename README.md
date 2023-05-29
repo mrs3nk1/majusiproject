@@ -19,4 +19,11 @@ v4 verzió tartalma: v3 + főoldal UI fejlesztések
 v5 verzió felkerült githubra
 v5 verzió tartalma: v4 + további UI fejlesztések
 
+# V6 
+v6 verzió felkerült githubra
+v6 verzió tartalma: v5 + további UI fejlesztések, jegyfoglalás ablak véglegesítve
+
+# V7 
+v7 verzió felkerült githubra
+v7 verzió tartalma: v6 + hibák kijavítása, végleges produktum
 
