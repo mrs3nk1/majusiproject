@@ -6,7 +6,8 @@
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="960"/>
-                <ColumnDefinition Width="960"/>
+                <ColumnDefinition Width="445"/>
+                <ColumnDefinition Width="515"/>
             </Grid.ColumnDefinitions>
 
             <StackPanel Grid.Column="0" Width="960" HorizontalAlignment="Right" Background="Black">
@@ -27,13 +28,13 @@
                 <Button Margin="0,10,265,10" Width="430" HorizontalAlignment="Right" Click="ExitButton_Click" Height="30" Content="Kilépés"  BorderBrush="#F5D21F"  Foreground="#F5D21F" Background="Black" />
                 <TextBlock Foreground="#F5D21F" TextAlignment="Center" Margin="265,10,0,10" HorizontalAlignment="Left" Width="430"><Run Text="Nincs még fiókod? Regisztrálj!"/></TextBlock>
                 <Button Margin="0,10,265,10" Width="430" HorizontalAlignment="Right" Click="RegisterButton_Click" Height="30" Content="Regisztráció"  BorderBrush="#F5D21F" Background="Black" Foreground="#F5D21F"/>
-
+                <Label HorizontalAlignment="Center" Background="Black" Foreground="#F5D21F"  Margin="50, 200, 50 , 0" Content="Copyright Thunder Cinema KFT 2023. All rights reserved" ></Label>
 
 
             </StackPanel>
 
 
-            <StackPanel Grid.Column="1" Width="960" Background="Black" >
+            <StackPanel Grid.Column="1" Width="960" Background="Black" Grid.ColumnSpan="2" >
                 <TextBlock Foreground="#F5D21F" Text="Műsoron" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="403,30" FontSize="36" FontFamily="Unispace"/>
                 <Image x:Name="newsImage" Height="800" Width="800"/>
             </StackPanel>

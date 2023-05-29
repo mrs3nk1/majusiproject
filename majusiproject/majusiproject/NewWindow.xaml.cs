@@ -16,6 +16,7 @@ namespace majusiproject
 {
     public partial class NewWindow : Window
     {
+        KisteremJegyfoglalasWindow kisteremWindow = new KisteremJegyfoglalasWindow();
         public NewWindow()
         {
             InitializeComponent();
@@ -31,14 +32,39 @@ namespace majusiproject
         private void KisteremJegyfoglalas_Click(object sender, RoutedEventArgs e)
         {
             // Új ablak megjelenítése a kisterem jegyfoglaláshoz
-            KisteremJegyfoglalasWindow kisteremWindow = new KisteremJegyfoglalasWindow();
+            
             kisteremWindow.Show();
         }
 
         private void FoteremJegyfoglalas_Click(object sender, RoutedEventArgs e)
         {
             // Üzenet megjelenítése a főterem jegyfoglalás alatt
-            MessageBox.Show("A főterem felújítás alatt", "Jegyfoglalás", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show("A főterem felújítás alatt!", "Hiba", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void Label_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            kisteremWindow.Show();
+        }
+
+        private void Label_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
+        {
+            kisteremWindow.Show();
+        }
+
+        private void Label_MouseLeftButtonDown_2(object sender, MouseButtonEventArgs e)
+        {
+            kisteremWindow.Show();
+        }
+
+        private void Label_MouseLeftButtonDown_3(object sender, MouseButtonEventArgs e)
+        {
+            kisteremWindow.Show();
+        }
+
+        private void Label_MouseLeftButtonDown_4(object sender, MouseButtonEventArgs e)
+        {
+            kisteremWindow.Show();
         }
     }
     

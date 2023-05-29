@@ -5,10 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:majusiproject"
         mc:Ignorable="d"
-        Title="Jegyfoglalás" Height="540" Width="960">
+        Title="Jegyfoglalás" Height="640" Width="960">
+        
     <Border BorderBrush="#F5D21F" BorderThickness="5" >
         <Grid Background="Black">
             <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
@@ -203,6 +205,10 @@
             </Grid>
             <Grid Grid.Row="1">
                 <Button x:Name="lbutton" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Jegyfoglalás" FontSize="20" Height="40" Width="125" BorderBrush="#F5D21F" Foreground="#F5D21F" Background="Black" BorderThickness="4" Click="lbutton_Click" />
+            </Grid>
+            <Grid Grid.Row="2">
+                <Label Content="Szabad hely: Fekete Foglalt hely: Piros" Foreground="#F5D21F" Margin="50, 20, 50, 0" HorizontalAlignment="Center" ></Label>
+                <Label HorizontalAlignment="Center" Background="Black" Foreground="#F5D21F"  Margin="50, 70, 50 , 0" Content="Copyright Thunder Cinema KFT 2023. All rights reserved" ></Label>
             </Grid>
         </Grid>
     </Border>

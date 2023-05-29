@@ -19,7 +19,6 @@ namespace majusiproject
     /// </summary>
     public partial class KisteremJegyfoglalasWindow : Window
     {
-        
         string[,] balhelyek = new string[5,5]
         {
                 { "1", "2", "3", "4", "5"},{ "1", "2", "3", "4", "5"},{ "1", "2", "3", "4", "5"},{ "1", "2", "3", "4", "5"},{ "1", "2", "3", "4", "5"}
@@ -782,6 +781,7 @@ namespace majusiproject
         }
         private void lbutton_Click(object sender, RoutedEventArgs e)
         {
+            
             for (int x = 0; x < 5; x++)
             {
                 for (int y = 0; y < 5; y++)
@@ -989,6 +989,10 @@ namespace majusiproject
                     }  
                 }
             }
+            MessageBox.Show("Sikeres foglalás!");
+            this.Hide();
+            
         }
     }
+
 }

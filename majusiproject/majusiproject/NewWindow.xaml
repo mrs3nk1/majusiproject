@@ -18,6 +18,18 @@
                 <Button Width="430" Margin="150,5" Height="30" Content="Kisterem Jegyfoglalás" Click="KisteremJegyfoglalas_Click"  BorderBrush="#F5D21F" Foreground="#F5D21F" Background="Black" />
 
                 <Button HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="265,10,265,10" Click="LogoutButton_Click" Height="30" Width="430" BorderBrush="#F5D21F" Foreground="#F5D21F" Background="Black" Content="Kijelentkezés"/>
+                <Label HorizontalAlignment="Left" Background="Black" Foreground="#F5D21F"  Margin="50, 30, 50 , 0" Content="Vetítési Időpontok (2023.05. 30 - 2023.06.04)" FontSize="30" FontFamily="Unispace"> </Label>
+
+                <Label HorizontalAlignment="Left" Background="Black" Foreground="#F5D21F"  Margin="50, 5, 50 , 0" Content="Super Mario              12:00" FontSize="15" FontFamily="Unispace" MouseLeftButtonDown="Label_MouseLeftButtonDown"></Label>
+                <Label HorizontalAlignment="Left" Background="Black" Foreground="#F5D21F"  Margin="50, 5, 50 , 0" Content="Halálos Iramban 10       14:00" FontSize="15" FontFamily="Unispace" MouseLeftButtonDown="Label_MouseLeftButtonDown_1"></Label>
+                <Label HorizontalAlignment="Left" Background="Black" Foreground="#F5D21F"  Margin="50, 5, 50 , 0" Content="Oppenheimer              16:00" FontSize="15" FontFamily="Unispace" MouseLeftButtonDown="Label_MouseLeftButtonDown_2"></Label>
+                <Label HorizontalAlignment="Left" Background="Black" Foreground="#F5D21F"  Margin="50, 5, 50 , 0" Content="Glaxis Örzői 3.          18:00" FontSize="15" FontFamily="Unispace" MouseLeftButtonDown="Label_MouseLeftButtonDown_3"></Label>
+                <Label HorizontalAlignment="Left" Background="Black" Foreground="#F5D21F"  Margin="50, 5, 50 , 0" Content="John Wick 4.             20:00" FontSize="15" FontFamily="Unispace" MouseLeftButtonDown="Label_MouseLeftButtonDown_4"></Label>
+
+
+
+
+                <Label HorizontalAlignment="Center" Background="Black" Foreground="#F5D21F"  Margin="50, 280, 50 , 0" Content="Copyright Thunder Cinema KFT 2023. All rights reserved" ></Label>
             </StackPanel>
 
             <StackPanel Grid.Column="1" Width="960" Background="Black">
@@ -32,6 +44,13 @@
                 <TextBlock Foreground="#F5D21F" Text="2D Teljes árú Teljes árú jegy -2000 Ft" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="180,10" FontSize="20" FontFamily="Unispace"  Width="600" TextAlignment="Center"/>
                 <TextBlock Foreground="#F5D21F" Text="3D Kedvezményes Gyermek (12 éves korig)	-1800 Ft" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="180,10" FontSize="20" FontFamily="Unispace"  Width="600" TextAlignment="Center"/>
                 <TextBlock Foreground="#F5D21F" Text="3D Teljes árú Teljes árú jegy -2100 Ft" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="180,10" FontSize="20" FontFamily="Unispace"  Width="600" TextAlignment="Center"/>
+                <TextBlock Foreground="#F5D21F" Text="Elérhetőségek" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="265,30" FontSize="36" FontFamily="Unispace" Width="430" TextAlignment="Center"/>
+                <TextBlock Foreground="#F5D21F" Text="Telefonszám: 06 20 4206969" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="180,10" FontSize="20" FontFamily="Unispace"  Width="600" TextAlignment="Center"/>
+                <TextBlock Foreground="#F5D21F" Text="E-mail Cím: 	thundercinema@jegyfoglalas.ussr" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="180,10" FontSize="20" FontFamily="Unispace"  Width="600" TextAlignment="Center"/>
+                <TextBlock Foreground="#F5D21F" Text="Cím: Vostok, Űrhajós Körút 420." VerticalAlignment="Center" HorizontalAlignment="Center" Margin="180,10" FontSize="20" FontFamily="Unispace"  Width="600" TextAlignment="Center"/>
+
+
+
             </StackPanel>
         </Grid>
     </Border>
