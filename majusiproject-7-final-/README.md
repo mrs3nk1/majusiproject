@@ -27,3 +27,7 @@ v6 verzió tartalma: v5 + további UI fejlesztések, jegyfoglalás ablak végleg
 v7 verzió felkerült githubra
 v7 verzió tartalma: v6 + hibák kijavítása, végleges produktum
 
+# V7.1 
+v7.1 verzió felkerült githubra
+v7 verzió tartalma: v7 + Józsi bá által kért javítások
+
